@@ -1,75 +1,31 @@
-# React + TypeScript + Vite
+# Buck M Harris - Portfolio (v2)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hey, I'm Buck Harris. If you're reading this, you're probably also looking at
+the site this repo builds, live at [buck-marshall.com](https://buck-marshall.com).
 
-Currently, two official plugins are available:
+A little backstory. My [first portfolio](https://github.com/Marshy8/portfolio)
+I built entirely on my own. I actually scrapped an early, AI-heavy attempt at it
+because I wasn't proud of the bloat, then rewrote the whole thing by hand so I
+could stand behind every line. That process taught me a lot about React and
+about the value of keeping code simple and readable.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This version is a different experiment. Instead of avoiding modern tooling, I
+leaned into it. I used current AI coding tools, including Claude, to move faster
+and build something more ambitious: a photo-forward, single-page site that
+features my own astrophotography, with scroll-snap sections, optimized media,
+and a cleaner design system. I drove the design decisions, chose the palette,
+wrote the content, and shot every photo, working through the code alongside the
+tools rather than just taking whatever they handed me.
 
-## React Compiler
+To me, knowing how and when to reach for these tools is part of being a
+developer now. So is understanding what they produce well enough to own it, fix
+it, and build on it. That's the balance I'm aiming for here.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the ESLint configuration
+- **React 19** with **TypeScript**
+- **Vite** for the build and dev server
+- **Tailwind CSS v4**
+- Deployed to **GitHub Pages** on a custom domain
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Thanks for taking a look.
