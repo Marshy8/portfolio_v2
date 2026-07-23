@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+:root {
+  --text: #e9e4d7;
+  --text-h: #fbf9f2;
+  --muted: #b3abc9;
+  --bg: #412a39;
+  --surface: #5f278b;
+  --border: rgba(233, 228, 215, 0.18);
+  --accent: #985dc7;
+  --accent-bg: rgba(152, 93, 199, 0.18);
+  --accent-border: rgba(152, 93, 199, 0.55);
+  --shadow:
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 300ms;
+
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.snap-scroller {
+  height: 100dvh;
+  overflow-y: auto;
+  overscroll-behavior-y: none;
+  scrollbar-width: none;
+}
+.snap-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .snap-scroller {
+    scroll-snap-type: y proximity;
+  }
+}
+
+.section-frame {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100dvh;
+}
+@media (hover: hover) and (pointer: fine) {
+  .section-frame {
+    height: 100dvh;
+  }
+  .section-content {
+    max-height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 600ms var(--ease),
+      transform 600ms var(--ease);
+  }
+  [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .snap-scroller {
+    scroll-behavior: smooth;
+  }
+
+  @keyframes kenburns {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.09);
+    }
+  }
+  .kenburns {
+    animation: kenburns 24s var(--ease) forwards;
+  }
+}
