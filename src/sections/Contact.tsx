@@ -12,7 +12,6 @@ const SOCIALS = [
     href: "https://www.linkedin.com/in/buck-harris-846a3931b/",
   },
 ];
-
 export function Contact() {
   const [copied, setCopied] = useState<string | null>(null);
 
