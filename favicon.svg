@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5f278b" />
+      <stop offset="1" stop-color="#412a39" />
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="64" height="64" rx="14" fill="url(#bg)" />
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="13.25" fill="none"
+        stroke="#c9a6ef" stroke-opacity="0.4" stroke-width="1.5" />
+  <text x="32" y="35" text-anchor="middle" dominant-baseline="central"
+        font-family="system-ui, 'Segoe UI', Roboto, sans-serif"
+        font-weight="700" font-size="42"
+        fill="#f2ecfa">B</text>
+</svg>
