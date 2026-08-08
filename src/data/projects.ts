@@ -3,6 +3,7 @@ import phastPhotoMp4 from "../assets/phastPhoto.mp4";
 import phastPhotoWebm from "../assets/phastPhoto.webm";
 import cellSeekersMp4 from "../assets/cellseekers.mp4";
 import cellSeekersWebm from "../assets/cellseekers.webm";
+import soloSuiteMp4 from "../assets/solosuite.mp4";
 
 export const PROJECTS: Project[] = [
   {
@@ -13,6 +14,15 @@ export const PROJECTS: Project[] = [
     link: "https://github.com/SeniorDesign2023/PHaSTphoto",
     tags: ["React", "OpenAI API", "Team of 4"],
     video: { webm: phastPhotoWebm, mp4: phastPhotoMp4 },
+  },
+  {
+    id: "solosuite",
+    title: "SoloSuite",
+    description:
+      "A simple demo site showcasing a Node.js backend built by me to service pink colar workers' scheduling needs. It integrates with the Google Calendar API -> reach out for a live demo.",
+    link: "https://solosuitedemo.buck-marshall.com",
+    tags: ["Node.js", "Google Calendar API"],
+    video: { mp4: soloSuiteMp4 },
   },
   {
     id: "cellseekers",
