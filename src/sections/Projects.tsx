@@ -11,7 +11,7 @@ export function Projects() {
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)]">Projects</h2>
         </Reveal>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,20rem),1fr))] gap-6">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,15rem),1fr))] gap-6">
           {PROJECTS.map((project, i) => (
             <Reveal key={project.id} delay={i * 80}>
               <a
