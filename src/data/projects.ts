@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     description:
       "A React time-tracking app built for multiple teachers and their young students across Seminole County, Florida.",
     link: "https://teachertime.buck-marshall.com",
-    tags: ["React", "Typescript"],
+    tags: ["React", "TypeScript"],
     video: { webm: teacherTimeWebm, mp4: teacherTimeMp4 },
   },
   {
