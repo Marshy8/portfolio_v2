@@ -9,7 +9,7 @@ const SOCIALS = [
   { label: "GitHub", href: "https://github.com/Marshy8" },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/buck-harris-846a3931b/",
+    href: "https://www.linkedin.com/in/buck-harris/",
   },
 ];
 export function Contact() {
