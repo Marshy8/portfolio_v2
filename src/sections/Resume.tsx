@@ -33,7 +33,7 @@ export function Resume() {
             <a
               href="/Buck-M-Harris-Resume.pdf"
               download="Buck-M-Harris-Resume.pdf"
-              className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-medium text-white transition-transform duration-[var(--dur)] hover:-translate-y-0.5"
+              className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-medium text-[var(--accent-ink)] transition-transform duration-[var(--dur)] hover:-translate-y-0.5"
             >
               Download PDF
             </a>

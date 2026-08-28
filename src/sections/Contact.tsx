@@ -29,7 +29,7 @@ export function Contact() {
     <Section
       id="contact"
       scrim={false}
-      bgClassName="bg-gradient-to-b from-[#1a0f16] via-[#3a1f4d] to-[#1a0f16]"
+      bgClassName="bg-gradient-to-b from-[#080d16] via-[#12304a] to-[#080d16]"
     >
       <div className="flex flex-col gap-10">
         <Reveal>

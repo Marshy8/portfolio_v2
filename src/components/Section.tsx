@@ -48,7 +48,7 @@ export function Section({
 
       {scrim && (
         <div
-          className="absolute inset-0 bg-gradient-to-t from-[#1a0f16]/85 via-[#1a0f16]/45 to-[#1a0f16]/70"
+          className="scrim absolute inset-0"
           aria-hidden="true"
         />
       )}

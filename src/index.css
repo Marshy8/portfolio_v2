@@ -1,17 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --text: #e9e4d7;
-  --text-h: #fbf9f2;
-  --muted: #b3abc9;
-  --bg: #412a39;
-  --surface: #5f278b;
-  --border: rgba(233, 228, 215, 0.18);
-  --accent: #985dc7;
-  --accent-bg: rgba(152, 93, 199, 0.18);
-  --accent-border: rgba(152, 93, 199, 0.55);
+  /* One hue family: a cyan-blue accent on deep navy, matching the night-sky
+     photos. Neutrals are cool-tinted so they sit on the same axis. */
+  --bg: #080d16;
+  --surface: #131e2e;
+  --text: #dce5f2;
+  --text-h: #f3f7fd;
+  --muted: #8fa3bd;
+  --border: rgba(143, 163, 189, 0.2);
+
+  --accent: #58c4e8;
+  --accent-ink: #04141d;
+  --accent-bg: rgba(88, 196, 232, 0.16);
+  --accent-border: rgba(88, 196, 232, 0.5);
+
+  --scrim: 5, 11, 20;
   --shadow:
-    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    rgba(3, 7, 14, 0.55) 0 10px 15px -3px, rgba(3, 7, 14, 0.35) 0 4px 6px -2px;
 
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
@@ -81,6 +87,15 @@ body,
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
+}
+
+.scrim {
+  background-image: linear-gradient(
+    to top,
+    rgba(var(--scrim), 0.88),
+    rgba(var(--scrim), 0.48) 45%,
+    rgba(var(--scrim), 0.72)
+  );
 }
 
 h1,

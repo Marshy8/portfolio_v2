@@ -41,7 +41,7 @@ export function Hero() {
           <div className="flex flex-wrap gap-3 pt-2">
             <a
               href="#projects"
-              className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-medium text-white transition-transform duration-[var(--dur)] hover:-translate-y-0.5"
+              className="rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-medium text-[var(--accent-ink)] transition-transform duration-[var(--dur)] hover:-translate-y-0.5"
             >
               View my work
             </a>
