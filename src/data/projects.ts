@@ -1,6 +1,6 @@
 import type { Project } from "../types";
-import phastPhotoMp4 from "../assets/phastPhoto.mp4";
-import phastPhotoWebm from "../assets/phastPhoto.webm";
+import voiceVolumeMp4 from "../assets/voiceVolume.mp4";
+import voiceVolumeWebm from "../assets/voiceVolume.webm";
 import cellSeekersMp4 from "../assets/cellseekers.mp4";
 import cellSeekersWebm from "../assets/cellseekers.webm";
 import soloSuiteMp4 from "../assets/solosuite.mp4";
@@ -10,22 +10,13 @@ import teacherTimeWebm from "../assets/teachertime.webm";
 
 export const PROJECTS: Project[] = [
   {
-    id: "phastphoto",
-    title: "PHaSTphoto",
+    id: "voicevolume",
+    title: "VoiceVolume",
     description:
-      "A React web app that organizes and searches photos using AI-generated tags from the OpenAI API. Built by a four-person team, it features a Boolean search that filters across 20+ tags.",
-    link: "https://github.com/SeniorDesign2023/PHaSTphoto",
-    tags: ["React", "OpenAI API", "Team of 4"],
-    video: { webm: phastPhotoWebm, mp4: phastPhotoMp4 },
-  },
-  {
-    id: "solosuite",
-    title: "SoloSuite",
-    description:
-      "A simple demo site showcasing a Node.js backend built by me to service pink colar workers' scheduling needs. It integrates with the Google Calendar API -> reach out for a live demo.",
-    link: "https://solosuitedemo.buck-marshall.com",
-    tags: ["Node.js", "Google Calendar API"],
-    video: { webm: soloSuiteWebm, mp4: soloSuiteMp4 },
+      "A React volume indicator app built by me and Justin Quan for multiple teachers and their young students across Seminole County, Florida.",
+    link: "https://voicevolume.buck-marshall.com",
+    tags: ["React", "TypeScript"],
+    video: { webm: voiceVolumeWebm, mp4: voiceVolumeMp4 },
   },
   {
     id: "teachertime",
@@ -35,6 +26,15 @@ export const PROJECTS: Project[] = [
     link: "https://teachertime.buck-marshall.com",
     tags: ["React", "TypeScript"],
     video: { webm: teacherTimeWebm, mp4: teacherTimeMp4 },
+  },
+  {
+    id: "solosuite",
+    title: "SoloSuite",
+    description:
+      "A simple demo site showcasing a Node.js backend built by me to service pink colar workers' scheduling needs. It integrates with the Google Calendar API -> reach out for a live demo.",
+    link: "https://solosuitedemo.buck-marshall.com",
+    tags: ["Node.js", "Google Calendar API"],
+    video: { webm: soloSuiteWebm, mp4: soloSuiteMp4 },
   },
   {
     id: "cellseekers",
