@@ -7,7 +7,6 @@ const SKILLS = [
   "TypeScript",
   "JavaScript",
   "C#",
-  "Lua",
   "React",
   "Angular",
   "REST APIs",
