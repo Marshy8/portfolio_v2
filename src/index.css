@@ -14,6 +14,7 @@
   --accent-ink: #04141d;
   --accent-bg: rgba(88, 196, 232, 0.16);
   --accent-border: rgba(88, 196, 232, 0.5);
+  --danger-border: rgba(240, 128, 128, 0.6);
 
   --scrim: 5, 11, 20;
   --shadow:
@@ -146,5 +147,15 @@ a {
   }
   .kenburns {
     animation: kenburns 24s var(--ease) forwards;
+  }
+
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+  .toast {
+    animation: toast-in 400ms var(--ease);
   }
 }

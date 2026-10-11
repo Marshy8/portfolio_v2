@@ -10,6 +10,12 @@ export interface SectionMeta {
   label: string;
 }
 
+export interface ContactMessage {
+  name: string;
+  contact: string;
+  message: string;
+}
+
 export interface Project {
   id: string;
   title: string;
